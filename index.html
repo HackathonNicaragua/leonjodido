@@ -5,18 +5,43 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bienvenido</title>
+    <title>Aviato</title>
     <meta name="apple-mobile-web-app-status-bar-style" content="#277bdb"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="Framework/framework7.material.css">
+    <link rel="stylesheet" href="Framework/framework7.material.colors.css">
     <link rel="stylesheet" href="Framework/kitchen-sink.css">
     <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
-<div>
-
+<div class="view view-main" data-page="swiper-fade">
+    <div>
+        <div data-page="swiper-fade" class="page page-on-center">
+            <div class="page-content">
+                <div data-pagination=".swiper-pagination" data-effect="fade"
+                     class="swiper-container swiper-init ks-demo-slider ks-fade-slider swiper-container-horizontal swiper-container-fade">
+                    <div class="swiper-pagination swiper-pagination-bullets"><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span
+                            class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span
+                            class="swiper-pagination-bullet"></span></div>
+                    <div class="swiper-wrapper" style="transition-duration: 0ms;">
+                        <div style="background-image: url('img/p1.jpg');" class="swiper-slide swiper-slide-active next-img">
+                        </div>
+                        <div style="background-image: url('img/p6.jpeg');"
+                             class="swiper-slide next-img">
+                            <div class="valor">
+                                <a href="" class="valor button ve bg-indigo color-white">Continuar...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 <script src="js/js.js"></script>
 <script src="js/framework7.js"></script>
+<script src="Framework/kitchen-sink.js"></script>
 </html>

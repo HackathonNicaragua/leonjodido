@@ -1,0 +1,13 @@
+.valor{
+    width: 100% !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: static !important;
+}
+.ve {
+    width: 50% !important;
+    text-align: center !important;
+    border-radius: 2em !important;
+    position: fixed !important;
+}
