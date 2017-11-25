@@ -11,3 +11,12 @@
     border-radius: 2em !important;
     position: fixed !important;
 }
+.center_texto {
+    text-align: center !important;
+}
+
+.center {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+}

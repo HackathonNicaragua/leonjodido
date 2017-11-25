@@ -15,7 +15,162 @@
     <link rel="stylesheet" href="../css/css.css">
 </head>
 <body>
+<div>
+    <div>
+        <div class="pages">
+            <div class="navbar-fixed">
+                <div data-page="tabbar" class="page toolbar-fixed page-on-center">
+                    <div class="navbar">
+                        <div class="navbar-inner bg-indigo">
+                            <div class="center">Atencion Cliente</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar tabbar bg-indigo">
+                    <div class="toolbar-inner">
+                        <a href="#tab-1" class="tab-link active">Ingresar</a>
+                        <a href="#tab-2" class="tab-link">Registro</a><span
+                            class="tab-link-highlight" style="width: 25%; transform: translate3d(0%, 0px, 0px);"></span>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="page-content with-subnavbar hide-bars-on-scroll">
+                <div class="page-content">
+                    <div class="tabs">
+                        <div id="tab-1" class="tab active">
+                            <div class="content-block list-block">
+                                <form action="../cliente/cliente.html" name="myForm1" onsubmit="return(ingresar());">
+                                    <i class="icon-user-check small center center_texto color-purple"></i>
+                                    <ul>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">Correo:</div>
+                                                    <div class="item-input">
+                                                        <script type="text/javascript">
+                                                            var lista = document.cookie.split(";");
+                                                            for (i in lista) {
+                                                                var busca = lista[i].search("correo");
+                                                                if (busca > -1) {
+                                                                    micookie = lista[i]
+                                                                }
+                                                            }
+                                                            var igual = micookie.indexOf("=");
+                                                            var valor = micookie.substring(igual + 1);
+                                                            if(valor!=""){
+                                                                document.write("<input type='email' name='correo' id='correo' value='" + valor + "'</input");
+                                                            }else {
+                                                                document.write("<input type='email' name='correo' id='correo'/>");
+                                                            }
+                                                        </script>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">Contraseña:</div>
+                                                    <div class="item-input">
+                                                        <input type="password" name="pass" id="password"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-input">
+                                                        <input type="submit"
+                                                               class="colo-btn button button-fill color-orange"
+                                                               value="Ingresar"/>
 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab">
+                            <div class="content-block list-block">
+                                <form action="#" name="myForm2" onsubmit="return(registrar());">
+                                    <i class="icon-user-plus small center center_texto color-orange"></i>
+                                    <ul>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">Nombre:</div>
+                                                    <div class="item-input">
+                                                        <input type="text" name="nombre" id="nombre"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">Apellido:</div>
+                                                    <div class="item-input">
+                                                        <input type="text" name="apellido" id="apellido"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">Nacimiento:</div>
+                                                    <div class="item-input item-input-field">
+                                                        <input type="date" id="nacimiento" name="nacimiento">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">Correo:</div>
+                                                    <div class="item-input">
+                                                        <input type="email" id="correo1" name="correo1"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-title label">Contrasena:</div>
+                                                    <div class="item-input">
+                                                        <input type="password" id="pass1" name="pass1"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item-content">
+                                                <div class="item-inner">
+                                                    <div class="item-input">
+                                                        <input type="submit"
+                                                               class="colo-btn button button-fill color-orange"
+                                                               value="Registrar"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 <script src="../js/js.js"></script>
 <script src="../js/framework7.js"></script>
