@@ -1,3 +1,6 @@
+body{
+    font-family: sans-serif!important;
+}
 .valor{
     width: 100% !important;
     display: block !important;
@@ -14,9 +17,11 @@
 .center_texto {
     text-align: center !important;
 }
-
 .center {
     margin-left: auto !important;
     margin-right: auto !important;
     display: block !important;
+}
+.small{
+    font-size: 40px;
 }
