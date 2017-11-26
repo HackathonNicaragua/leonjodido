@@ -9,22 +9,34 @@
     <link rel="stylesheet" href="../Framework/framework7.material.colors.css">
     <link rel="stylesheet" href="../Framework/framework7.material.css">
     <link rel="stylesheet" href="../icono/style.css">
+    <link rel="stylesheet" href="../css/css.css">
     <link rel="stylesheet" href="../SivaNav/css/css.css">
 </head>
 <body>
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="ayuda.html">Ayuda</a>
+<div class="bott">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#!">Editar Perfil</a>
+        <a href="#!">Services</a>
+        <a href="#!" onclick="location.href='condiciones_privacidad.html';">Condiciones y privacidad</a>
+        <a href="#!" onclick="location.href='login/ingresar.html';">Ayuda</a>
+    </div>
+    <div class="prueba_color color-white center_texto">
+        <div class="dipp">
+            <p class="right pppp"><img src="../img/icon.png" alt="" width="20%"> <span> </span>Asistente Inteligente</p>
+        </div>
+        <div class="dipp2">
+            <a href="#!" onclick="openNav()" class="button color-white po"><i class="icon-menu small po"></i></a>
+        </div>
+    </div>
 </div>
-<a href="#!" onclick="openNav()" class="button"><i class="icon-google">OOGle</i></a>
-
-<div id="main">
-
+<div id="main"  style=" margin: 0; padding: 0;">
+    <iframe class="bto"
+            src="https://console.dialogflow.com/api-client/demo/embedded/ce3e1901-a715-44cc-871c-e7bc32bd1dd7">
+    </iframe>
 </div>
 </body>
+<script src="../js/framework7.js"></script>
 <script src="../Framework/kitchen-sink.js"></script>
 <script src="../SivaNav/js/js.js"></script>
 </html>
