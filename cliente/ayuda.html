@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aviato</title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#277bdb"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../Framework/framework7.material.css">
+    <link rel="stylesheet" href="../Framework/framework7.material.colors.css">
+    <link rel="stylesheet" href="../Framework/kitchen-sink.css">
+    <link rel="stylesheet" href="../icono/style.css">
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+<script type="text/javascript">
+    if (GetCookie("nombre") != "null") {
+        location.href = "../login/login.html";
+    }
+</script>
+
+<div class="views">
+    <div class="view view-main" data-page="tabbar">
+        <div class="pages navbar-fixed">
+            <div data-page="tabbar" class="page toolbar-fixed page-on-center ">
+                <div class="navbar bg-deeppurple">
+                    <div class="navbar-inner">
+                        <div class="intel button3">
+                            <br>
+                            <button onClick="document.location = 'cliente.html'" class="icon-arrow-left2 fon color-white "></button>
+                        </div>
+                        <div class="center">Atencion al Cliente</div>
+                    </div>
+                </div>
+                <div class="toolbar tabbar bg-deeppurple">
+                    <div class="toolbar-inner">
+                        <a href="#tab-1" class="tab-link active">Ayuda</a>
+                    </div>
+                </div>
+                <div class="page-content">
+                    <div class="tabs">
+                        <div id="tab-1" class="tab active">
+                            <div class="content-block">
+                                <div class="hijo center center_texto">
+                                    <img src="../img/icon.png" alt="" width="25%">
+                                </div>
+                                <div class="list-block media-list modal-text">
+                                    <p ALIGN="justify">Lo principal es construir una nueva experiencia de interacción
+                                        entre ellas y sus
+                                        clientes.. El consumidor de hoy está más informado, está en constante
+                                        comunicación y es autosuficiente, y esto para las empresas ha representado un
+                                        gran reto, ya que existe la constante duda de ¿cómo satisfacer a un cliente así?
+                                        Aquí es donde entra el papel de la inteligencia artificial, una excelente
+                                        herramienta que dota a la marca de agentes virtuales enfocados a la rápida
+                                        atención al cliente.
+                                    </p>
+                                    <p ALIGN="justify">Le permite a la empresa estar disponibles las 24 horas del día,
+                                        los siete días
+                                        de la semana, tiene la habilidad de hacer sugerencias de contenido si no posee
+                                        la información solicitada, basada en interacciones similares con otros clientes,
+                                        entiende el lenguaje natural, múltiples formas de hacer preguntas,
+                                        regionalismos, errores gramaticales, además de entregar respuestas
+                                        personalizadas y reportes para una mejora continua.</p>
+                                    <br>
+
+                                    <a href="" class="colo-btn button button-fill color-teal"
+                                       onclick="myApp.alert('Derechos de autor de la empresa!!'+'Vesion 1.0.0 2017')">Version
+                                        1.0.0 2017</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/js.js"></script>
+<script src="../js/framework7.js"></script>
+<script src="../Framework/kitchen-sink.js"></script>
+</html>

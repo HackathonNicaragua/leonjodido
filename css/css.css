@@ -25,3 +25,29 @@ body{
 .small{
     font-size: 40px;
 }
+header, main, footer {
+    padding-left: 300px;
+}
+
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+button {
+    background-color: transparent;
+    border: none;
+}
+.fon{
+    font-size: 30px;
+    padding-right: 8px;
+}
+.intel {
+    width: 100%!important;
+    height: 100px;
+    position: fixed!important;
+}
+.button3{
+    margin-top: 6px!important;
+    text-align: left!important;
+}
