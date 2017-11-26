@@ -1,3 +1,20 @@
+<script type="text/javascript">
+    var lista = document.cookie.split(";");
+    for (i in lista) {
+        var busca = lista[i].search("si");
+        if (busca > -1) {
+            micookie = lista[i]
+        }
+    }
+    var igual = micookie.indexOf("=");
+    var val = micookie.substring(igual + 1);
+
+    if (val=='si'){
+        location.href="cliente/cliente.html";
+    }else {
+
+    }
+</script>
 <!doctype html>
 <html lang="es">
 <head>

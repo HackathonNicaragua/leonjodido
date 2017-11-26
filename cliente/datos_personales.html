@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aviato</title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#277bdb"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../Framework/framework7.material.css">
+    <link rel="stylesheet" href="../Framework/framework7.material.colors.css">
+    <link rel="stylesheet" href="../Framework/kitchen-sink.css">
+    <link rel="stylesheet" href="../icono/style.css">
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+<script type="text/javascript">
+    if (GetCookie("nombre") != "null") {
+        location.href = "../login/login.html";
+    }
+</script>
+<div>
+    <div>
+        <div class="pages ">
+            <div class="navbar-fixed">
+                <div data-page="tabbar" class="page toolbar-fixed page-on-center">
+                    <div class="navbar">
+                        <div class="navbar-inner bg-indigo">
+                            <div class="intel button3">
+                                <br>
+                                <button onClick="document.location = 'cliente.html'"
+                                        class="icon-arrow-left2 fon color-white"></button>
+                            </div>
+                            <div class="center">Atencion al Cliente</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar tabbar bg-indigo">
+                    <div class="toolbar-inner center">
+                        <a href="#tab-2" class="tab-link">Datos Personales</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="page-content with-subnavbar hide-bars-on-scroll">
+                <div class="page-content">
+                    <div id="tab-2" class="tab">
+                        <div class="content-block list-block">
+                            <ul>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Nombre:
+                                                <script type="text/javascript">
+                                                    var lista = document.cookie.split(";");
+                                                    for (i in lista) {
+                                                        var busca = lista[i].search("nombre");
+                                                        if (busca > -1) {
+                                                            micookie = lista[i]
+                                                        }
+                                                    }
+                                                    var igual = micookie.indexOf("=");
+                                                    var valor1 = micookie.substring(igual + 1);
+                                                    fr1 = valor1.replace('%20', " ");
+                                                    document.write(fr1);
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Apellido:
+                                                <script type="text/javascript">
+                                                    var lista = document.cookie.split(";");
+                                                    for (i in lista) {
+                                                        var busca = lista[i].search("apellido");
+                                                        if (busca > -1) {
+                                                            micookie = lista[i]
+                                                        }
+                                                    }
+                                                    var igual = micookie.indexOf("=");
+                                                    var valor2 = micookie.substring(igual + 1);
+                                                    fr2 = valor2.replace('%20', " ");
+                                                    document.write(fr2);
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Nacimiento:
+                                                <script type="text/javascript">
+                                                    var lista = document.cookie.split(";");
+                                                    for (i in lista) {
+                                                        var busca = lista[i].search("fecha");
+                                                        if (busca > -1) {
+                                                            micookie = lista[i]
+                                                        }
+                                                    }
+                                                    var igual = micookie.indexOf("=");
+                                                    var valor = micookie.substring(igual + 1);
+                                                    document.write(valor);
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Correo:
+                                                <script type="text/javascript">
+                                                    var lista = document.cookie.split(";");
+                                                    for (i in lista) {
+                                                        var busca = lista[i].search("correo");
+                                                        if (busca > -1) {
+                                                            micookie = lista[i]
+                                                        }
+                                                    }
+                                                    var igual = micookie.indexOf("=");
+                                                    var valor = micookie.substring(igual + 1);
+                                                    document.write(valor);
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-title">Contraseña:
+                                                <script type="text/javascript">
+                                                    var lista = document.cookie.split(";");
+                                                    for (i in lista) {
+                                                        var busca = lista[i].search("pass");
+                                                        if (busca > -1) {
+                                                            micookie = lista[i]
+                                                        }
+                                                    }
+                                                    var igual = micookie.indexOf("=");
+                                                    var valor = micookie.substring(igual + 1);
+                                                    document.write(valor);
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/js.js"></script>
+<script src="../js/framework7.js"></script>
+<script src="../Framework/kitchen-sink.js"></script>
+</html>

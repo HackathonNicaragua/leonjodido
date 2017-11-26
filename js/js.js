@@ -187,6 +187,18 @@ function registrar() {
     expireDate.setDate(expireDate.getDate() + caducidad);
     document.cookie = nombre0 + "=" + escape(valor) + "; expires=" + expireDate.toGMTString() + "; path=/";
 
+    nombre0 = "si";
+    valor = "si";
+    caducidad = 20000;
+
+    if (!caducidad)
+        caducidad = 20000;
+
+    var expireDate = new Date();
+
+    expireDate.setDate(expireDate.getDate() + caducidad);
+    document.cookie = nombre0 + "=" + escape(valor) + "; expires=" + expireDate.toGMTString() + "; path=/";
+
     return (true);
 }
 

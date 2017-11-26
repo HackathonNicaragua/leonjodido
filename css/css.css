@@ -71,6 +71,7 @@ div.avatar {
     background-size: 100% auto;
 }
 .prueba_color{
+    margin-bottom: 1em;
     background-color:#2b303e;
     width: 100%;
 }

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aviato</title>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#277bdb"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../Framework/framework7.material.css">
+    <link rel="stylesheet" href="../Framework/framework7.material.colors.css">
+    <link rel="stylesheet" href="../Framework/kitchen-sink.css">
+    <link rel="stylesheet" href="../icono/style.css">
+    <link rel="stylesheet" href="../css/css.css">
+</head>
+<body>
+<script type="text/javascript">
+    if (GetCookie("nombre") != "null") {
+        location.href = "../login/login.html";
+    }
+</script>
+<div>
+    <div>
+        <div class="pages ">
+            <div class="navbar-fixed">
+                <div data-page="tabbar" class="page toolbar-fixed page-on-center">
+                    <div class="navbar">
+                        <div class="navbar-inner bg-indigo">
+                            <div class="intel button3">
+                                <br>
+                                <button onClick="document.location = 'cliente.html' " class="icon-arrow-left2 fon color-white"></button>
+                            </div>
+                            <div class="center">Atencion al Cliente</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar tabbar bg-indigo">
+                    <div class="toolbar-inner">
+                        <a href="#tab-2" class="tab-link">Editar Cliente</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="page-content with-subnavbar hide-bars-on-scroll">
+                <div class="page-content">
+                    <div id="tab-2" class="tab">
+                        <div class="content-block list-block">
+                            <form action="cliente.html" name="myForm2" onsubmit="return(registrar());">
+                                <i class="icon-user-plus small center center_texto color-orange"></i>
+
+                                <ul>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">Nombre:</div>
+                                                <div class="item-input">
+                                                    <script type="text/javascript">
+                                                        var lista = document.cookie.split(";");
+                                                        for (i in lista) {
+                                                            var busca = lista[i].search("nombre");
+                                                            if (busca > -1) {
+                                                                micookie = lista[i]
+                                                            }
+                                                        }
+                                                        var igual = micookie.indexOf("=");
+                                                        var valor1 = micookie.substring(igual + 1);
+                                                        fr1 = valor1.replace('%20'," ");
+                                                        if (fr1 != "") {
+                                                            document.write("<input type='text' name='nombre' id='nombre' value='" + fr1 + "'</input");
+                                                        } else {
+                                                            document.write("<input type='text' name='nombre' id='nombre' value='",name,"'</input");
+                                                        }
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">Apellido:</div>
+                                                <div class="item-input">
+                                                    <script type="text/javascript">
+                                                        var lista = document.cookie.split(";");
+                                                        for (i in lista) {
+                                                            var busca = lista[i].search("apellido");
+                                                            if (busca > -1) {
+                                                                micookie = lista[i]
+                                                            }
+                                                        }
+                                                        var igual = micookie.indexOf("=");
+                                                        var valor2 = micookie.substring(igual + 1);
+                                                        fr2 = valor2.replace('%20'," ");
+                                                        document.write(fr2);
+                                                        document.write("<input type='text' name='apellido' id='apellido' value='" + fr2 + "'</input");
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">Nacimiento:</div>
+                                                <div class="item-input item-input-field">
+                                                    <script type="text/javascript">
+                                                        var lista = document.cookie.split(";");
+                                                        for (i in lista) {
+                                                            var busca = lista[i].search("fecha");
+                                                            if (busca > -1) {
+                                                                micookie = lista[i]
+                                                            }
+                                                        }
+                                                        var igual = micookie.indexOf("=");
+                                                        var valor = micookie.substring(igual + 1);
+                                                        document.write("<input type='text' name='nacimiento' id='nacimiento' value='" + valor + "'</input");
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">Correo:</div>
+                                                <div class="item-input">
+                                                    <script type="text/javascript">
+                                                        var lista = document.cookie.split(";");
+                                                        for (i in lista) {
+                                                            var busca = lista[i].search("correo");
+                                                            if (busca > -1) {
+                                                                micookie = lista[i]
+                                                            }
+                                                        }
+                                                        var igual = micookie.indexOf("=");
+                                                        var valor = micookie.substring(igual + 1);
+                                                        document.write("<input type='email' name='correo1' id='correo1' value='" + valor + "'</input");
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">Contrasena:</div>
+                                                <div class="item-input">
+                                                    <script type="text/javascript">
+                                                        var lista = document.cookie.split(";");
+                                                        for (i in lista) {
+                                                            var busca = lista[i].search("pass");
+                                                            if (busca > -1) {
+                                                                micookie = lista[i]
+                                                            }
+                                                        }
+                                                        var igual = micookie.indexOf("=");
+                                                        var valor = micookie.substring(igual + 1);
+                                                        document.write("<input type='password' name='pass1' id='pass1' value='" + valor + "'</input");
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-input">
+                                                    <input type="submit"
+                                                           class="colo-btn button button-fill color-orange"
+                                                           value="Guardar"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/js.js"></script>
+<script src="../js/framework7.js"></script>
+<script src="../Framework/kitchen-sink.js"></script>
+</html>
