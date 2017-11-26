@@ -58,6 +58,7 @@ button {
     height: 100vh!important;
 }
 .bott{
+    width: 100%!important;
     position: fixed;
 }
 div.avatar {
@@ -73,11 +74,11 @@ div.avatar {
 .prueba_color{
     margin-bottom: 1em;
     background-color:#2b303e;
-    width: 100%;
+    width: 100%!important;
 }
 .dipp{
     padding: 0;
-    width: 60%!important;
+    width: 70%!important;
     display: inline-block!important;
 }
 

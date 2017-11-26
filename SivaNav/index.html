@@ -1,16 +1,24 @@
-<input id="inputFileToLoad" type="file" onchange="encodeImageFileAsURL();" />
-<div id="imgTest"></div>
-<script type='text/javascript'>
-    function encodeImageFileAsURL() {
-        var filesSelected = document.getElementById("inputFileToLoad").files;
-        if (filesSelected.length > 0) {
-            var fileToLoad = filesSelected[0];
-            var fileReader = new FileReader();
-            fileReader.onload = function(fileLoadedEvent) {
-                var srcData = fileLoadedEvent.target.result; // <--- data: base64
-                document.write("<img src='"+ srcData+"' >");
-            };
-            fileReader.readAsDataURL(fileToLoad);
+<head>
+    <script type="text/javascript">
+        function GetInputValue () {
+            var input = document.getElementById ("fileToUpload");
+            alert (input.value);
+            var vr=input.value;
+            caducidad = 20000;
+
+            if (!caducidad)
+                caducidad = 20000;
+
+            var expireDate = new Date();
+
+            expireDate.setDate(expireDate.getDate() + caducidad);
+            document.cookie = "img" + "=" + escape(vr) + "; expires=" + expireDate.toGMTString() + "; path=/";
         }
-    }
-</script>
+    </script>
+</head>
+<body>
+Please select a file to upload:<br />
+<input type="file" id="fileToUpload" size="50"/>
+<br /><br />
+<button onclick="GetInputValue ();">Get the path to the file to upload!</button>
+</body>
