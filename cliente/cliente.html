@@ -14,11 +14,42 @@
 </head>
 <body>
 <div class="bott">
-    <div id="mySidenav" class="sidenav">
+    <div id="mySidenav" class="sidenav color-white">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="center center_texto color-white">
+            <img src="../img/icon.png" alt="" width="25%">
+        </div>
+        <br>
+       <div class="center_texto">
+           <script type="text/javascript">
+               var lista = document.cookie.split(";");
+               for (i in lista) {
+                   var busca = lista[i].search("nombre");
+                   if (busca > -1) {
+                       micookie = lista[i]
+                   }
+               }
+               var igual = micookie.indexOf("=");
+               var valor = micookie.substring(igual + 1);
+               fr1 = valor.replace('%20', " ");
+
+               var lista1 = document.cookie.split(";");
+               for (i in lista1) {
+                   var busca1 = lista1[i].search("apellido");
+                   if (busca1 > -1) {
+                       micookie = lista1[i]
+                   }
+               }
+               var igual1 = micookie.indexOf("=");
+               var valor1 = micookie.substring(igual1 + 1);
+               fr2 = valor1.replace('%20', " ");
+               document.write(fr1+" "+fr2);
+           </script>
+       </div>
         <a href="#!" onclick="location.href='datos_personales.html';">Perfil</a>
         <a href="#!" onclick="location.href='editar_cliente.html';">Editar Perfil</a>
         <a href="#!" onclick="location.href='condiciones_privacidad.html';">Condiciones y privacidad</a>
+        <a href="#!" onclick="location.href='ayuda.html';">Cerrar Seción</a>
         <a href="#!" onclick="location.href='ayuda.html';">Ayuda</a>
     </div>
     <div class="prueba_color color-white center_texto">
