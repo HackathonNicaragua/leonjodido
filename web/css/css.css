@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Italic';
+    src: url("../fonts/Italic/Roboto-Italic.woff2"),
+    url("../fonts/Italic/Roboto-Italic.woff") format("woff"),
+    url("../fonts/Italic/Roboto-Italic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    background-color: #f4f5f5;
+    height: 100vh !important;
+    width: 100%;
+    font-family: 'Italic', SansSerif!important;
+}
+.div{
+    margin: 1em;
+    width: 42%!important;
+    display: inline-block!important;
+}
+.esapcio{
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.b{
+    width: 100%!important;
+}
+@media only screen and (max-width: 990px) {
+    .maximo {
+        display: none !important; } }
+@media only screen and (min-width: 989px) {
+    .minimo {
+        display: none !important; } }
+.IOS{
+    width: 100%!important;
+    height: 100vh!important;
+}
